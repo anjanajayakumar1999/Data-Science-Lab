@@ -1,0 +1,7 @@
+import filecmp
+f1 = input("enter first file:")
+f2 = input("enter second file:")
+result = filecmp.cmp(f1, f2)
+print(result)
+result = filecmp.cmp(f1, f2, shallow=False)
+print(result)
